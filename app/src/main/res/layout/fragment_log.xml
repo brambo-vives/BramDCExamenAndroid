@@ -34,67 +34,67 @@
         android:layout_height="match_parent"
         tools:context=".FitTracker.LogFragment">
 
-<!--        <ScrollView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="0dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@+id/clear_button"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintRight_toRightOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/stop_button">-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/clear_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stop_button">
 
-<!--            &lt;!&ndash; In the TextView, we can access the nightsString LiveData,-->
-<!--                 which keeps it displayed and updated in the TextView-->
-<!--                 whenever it changes. &ndash;&gt;-->
+            <!-- In the TextView, we can access the nightsString LiveData,
+                 which keeps it displayed and updated in the TextView
+                 whenever it changes. -->
 
-<!--            <TextView-->
-<!--                android:id="@+id/textview"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
-<!--                android:text="@{FitTrackerViewModel.trainingString}" />-->
-<!--        </ScrollView>-->
+             />/   android:text="@{FitTrackerViewModel.trainingString}" />
+        </ScrollView>
 
-<!--        &lt;!&ndash; With data binding and LiveData, we can track the buttons' visibility states-->
-<!--             from the ViewModel. The click handler is in the ViewModel as well, and-->
-<!--             you can set it for the Views using this lambda pattern. &ndash;&gt;-->
+        <!-- With data binding and LiveData, we can track the buttons' visibility states
+             from the ViewModel. The click handler is in the ViewModel as well, and
+             you can set it for the Views using this lambda pattern. -->
 
-<!--        <Button-->
-<!--            android:id="@+id/start_button"-->
+        <Button
+            android:id="@+id/start_button"
 
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-<!--            android:text="@string/start"-->
-<!--            app:layout_constraintBaseline_toBaselineOf="@id/stop_button"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/stop_button"-->
-<!--            app:layout_constraintHorizontal_chainStyle="spread"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            android:onClick="@{() -> FitTrackerViewModel.onStartTracking()}" />-->
+            android:text="@string/start"
+            app:layout_constraintBaseline_toBaselineOf="@id/stop_button"
+            app:layout_constraintEnd_toStartOf="@+id/stop_button"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+         />/   android:onClick="@{() -> FitTrackerViewModel.onStartTracking()}" />
 
-<!--        <Button-->
-<!--            android:id="@+id/stop_button"-->
+        <Button
+            android:id="@+id/stop_button"
 
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-<!--            android:text="@string/stop"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/start_button"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            android:onClick="@{() -> FitTrackerViewModel.onStopTracking()}" />-->
+            android:text="@string/stop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/start_button"
+            app:layout_constraintTop_toTopOf="parent"
+         />/   android:onClick="@{() -> FitTrackerViewModel.onStopTracking()}" />
 
-<!--        <Button-->
-<!--            android:id="@+id/clear_button"-->
+        <Button
+            android:id="@+id/clear_button"
 
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-<!--            android:text="@string/clear"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--             />-->
+            android:text="@string/clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
 
 
 

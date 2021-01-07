@@ -19,11 +19,7 @@
         android:name="com.example.android.navigation.HelpFragment"
         android:label="fragment_help"
         tools:layout="@layout/fragment_help" />
-    <fragment
-        android:id="@+id/InstellingenFragment"
-        android:name="com.example.android.navigation.FitTracker.LogFragment"
-        android:label="fragment_Instellingen"
-        tools:layout="@layout/fragment_log" />
+
 
     <fragment
         android:id="@+id/instellingFragment"

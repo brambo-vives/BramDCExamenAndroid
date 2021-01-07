@@ -1,4 +1,4 @@
-package com.example.android.navigation
+package com.example.android.navigation.Model
 
 data class Quotes(
     val text: String,

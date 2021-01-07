@@ -21,20 +21,32 @@ import android.util.Log.d
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.android.navigation.databinding.ActivityMainBinding.inflate
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.example.android.navigation.Model.Quotes
+import com.example.android.navigation.viewModels.ViewModels
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import com.example.android.navigation.databinding.FragmentHelpBinding
-import java.util.Random
 
 class HelpFragment : Fragment() {
+
+    private val viewModel: ViewModel by lazy {
+        val activity = requireNotNull(this.activity) {
+            "You can only access the viewModel after onViewCreated()"
+        }
+
+        ViewModelProvider(this, ViewModels.Factory(activity.application)).get(ViewModels::class.java)
+
+    }
+
+
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

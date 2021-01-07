@@ -1,5 +1,6 @@
 package com.example.android.navigation
 
+import com.example.android.navigation.Model.Quotes
 import retrofit2.Call
 import retrofit2.http.GET
 
