@@ -16,7 +16,7 @@ import retrofit2.http.GET
  * A retrofit service to fetch a devbyte playlist.
  */
 interface DevbyteService {
-    @GET("devbytes.json")
+    @GET("quotes")
     fun getPlaylist(): Deferred<NetworkQuotesContainer>
 }
 
@@ -29,12 +29,12 @@ private val moshi = Moshi.Builder()
         .build()
 
 /**
- * Main entry point for network access. Call like `Network.devbytes.getPlaylist()`
+ * Main entry point for network access.
  */
 object Network {
     // Configure retrofit to parse JSON and use coroutines
     private val retrofit = Retrofit.Builder()
-            .baseUrl("https://devbytes.udacity.com/")
+            .baseUrl("https://type.fit/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .build()
