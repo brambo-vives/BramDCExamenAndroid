@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment2">
+
+    <fragment
+        android:id="@+id/titleFragment2"
+        android:name="com.example.android.navigation.MainFragment"
+        android:label="fragment_Main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_titleFragment2_to_instellingFragment"
+            app:destination="@id/instellingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HelpFragment2"
+        android:name="com.example.android.navigation.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/InstellingenFragment"
+        android:name="com.example.android.navigation.FitTracker.LogFragment"
+        android:label="fragment_Instellingen"
+        tools:layout="@layout/fragment_log" />
+
+    <fragment
+        android:id="@+id/instellingFragment"
+        android:name="com.example.android.navigation.instellingFragment"
+        android:label="fragment_instelling"
+        tools:layout="@layout/fragment_instelling" />
+</navigation>

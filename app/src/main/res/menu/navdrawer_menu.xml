@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/instellingFragment"
+        android:icon="@drawable/rules"
+        android:title="@string/Instelling" />
+    <item
+        android:id="@+id/HelpFragment2"
+        android:icon="@drawable/android"
+        android:title="help" />
+
+</menu>
